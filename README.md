@@ -5,6 +5,7 @@ A dashbord for covid 19 data analytics in France
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
+* Next step
 
 ## General info
 The DashBord is deployed on Heroku , feel free to check it here https://app-covid-dash.herokuapp.com/	(The map takes few seconds to load)\
@@ -25,3 +26,5 @@ To make the web page format and style
 To deploy the app 
 
 	
+## Next step
+make the dashbord go live 

@@ -196,9 +196,10 @@ def update_figure(selected_value,region,start_date,end_date):
         }
     
     return figure_chart
+
 @app.callback(
     Output('map','figure'),
-    Input('candidate','value')
+    [Input('candidate','value'),]
 )
 
 def update_map(candidate):

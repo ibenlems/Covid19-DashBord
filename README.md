@@ -9,7 +9,7 @@ A dashbord for covid 19 data analytics in France
 
 ## General info
 The DashBord is deployed on Heroku , feel free to check it here https://app-covid-dash.herokuapp.com/	(The map takes few seconds to load)\
-The France geojson file is from this repository https://github.com/gregoiredavid/france-geojson \
+The France regions geojson file is from this repository https://github.com/gregoiredavid/france-geojson \
 The data is retrieved from https://github.com/opencovid19-fr/data 
 ## Technologies
 Project is created with:

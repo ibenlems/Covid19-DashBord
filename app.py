@@ -53,14 +53,11 @@ app.layout = html.Div(
                         children="Coronavirus Disease (COVID-19) Analytics in France",
 
                         className="header-description",
-
                     ),
-
             ],
             className="header"
         ),
-
-       
+        
         html.Div(
             children=[
                 html.Div(
@@ -157,10 +154,6 @@ app.layout = html.Div(
             ],
             className="wrapper",
         ),
-
-
-
-
     ]
 )
 

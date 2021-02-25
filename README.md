@@ -20,7 +20,7 @@ The data is retrieved from https://github.com/opencovid19-fr/data
 Project is created with:
 * Python version 3.8
 * Dash \
-A python framework te create interactive dashbords. 
+A python framework te create interactive dashbords in webapps. 
 * Plotly \
 A librarie to make cool plots including maps
 * HTML and CSS \

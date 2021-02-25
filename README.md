@@ -1,8 +1,8 @@
 # Covid19-DashBord
-A dashbord for covid 19 data analytics in France \
+A dashbord for covid 19 data analytics in France 
 <p float="right">
   <img src="images/plot.png" width="350" />
-  <img src="images/map.png" width="350" />   
+  <img src="images/map.png" width="450" />   
 </p>
 
 

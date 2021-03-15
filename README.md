@@ -33,3 +33,4 @@ To deploy the app
 	
 ## Next step
 - [x] make the dashbord go live 
+- [ ] Fixing missing data issue

@@ -32,4 +32,4 @@ To deploy the app
 
 	
 ## Next step
-make the dashbord go live 
+- [x] make the dashbord go live 

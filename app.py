@@ -11,10 +11,17 @@ import numpy as np
 
 
 
-df = pd.read_csv('covid_data_france_2.csv')
+# df = pd.read_csv('covid_data_france_2.csv')
+# df["date"] = pd.to_datetime(df["date"], format="%Y-%m-%d")
+# df=df.astype({'granularite':'string','maille_nom':'string'})
+# df.sort_values("date", inplace=True)
+csv_url="https://github.com/opencovid19-fr/data/blob/master/dist/chiffres-cles.csv?raw=true"
+df=pd.read_csv(csv_url)
+df["date"]=df["date"].replace('2020-11_11','2020-11-11')
 df["date"] = pd.to_datetime(df["date"], format="%Y-%m-%d")
 df=df.astype({'granularite':'string','maille_nom':'string'})
 df.sort_values("date", inplace=True)
+        
 
 f=open('regions.geojson')
 regions=json.load(f)
@@ -165,7 +172,12 @@ app.layout = html.Div(
      Input("date-range", "end_date"),]
 )
 def update_figure(selected_value,region,start_date,end_date):
-    
+    df=pd.read_csv(csv_url)
+    df["date"]=df["date"].replace('2020-11_11','2020-11-11')
+    df["date"] = pd.to_datetime(df["date"], format="%Y-%m-%d")
+    df=df.astype({'granularite':'string','maille_nom':'string'})
+    df.sort_values("date", inplace=True)
+        
     mask = (
         (df.date <= end_date) 
         & (df.date >= start_date) 
@@ -196,6 +208,13 @@ def update_figure(selected_value,region,start_date,end_date):
 )
 
 def update_map(candidate):
+    
+    df=pd.read_csv(csv_url)
+    df["date"]=df["date"].replace('2020-11_11','2020-11-11')
+    df["date"] = pd.to_datetime(df["date"], format="%Y-%m-%d")
+    df=df.astype({'granularite':'string','maille_nom':'string'})
+    df.sort_values("date", inplace=True)
+        
 
     df_map = df[df['granularite']=='region']
     df2plot = df_map[['maille_nom',candidate]].groupby('maille_nom').mean().reset_index()
